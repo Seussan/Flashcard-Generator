@@ -39,7 +39,7 @@ function initGame() {
       var cardData = ClozeCardData;
       // Creating a new card for each question using our ClozeCard constructor
       for (var i = 0; i < cardData.length; i++) {
-        currentCard = new ClozeCard(cardData[i].partial, cardData[i].cloze);
+        currentCard = new ClozeCard(cardData[i].fullText, cardData[i].cloze);
         cardArray.push(currentCard);
       }
     }
@@ -123,10 +123,10 @@ function promptUserCloze(cardArray, currentIndex, currentScore, cardType) {
   inquirer.prompt([{
     type: "input",
     name: "text",
-    message: card.partial + "\nAnswer:"
+    message: card.partialText + "\nAnswer:"
   }]).then(function(answer) {
     // Checking to see if their answer was correct, regardless of casing
-    if (answer.text.trim().toLowerCase() === card.cloze.trim().toLowerCase()) {
+    if (answer.text.trim().toLowerCase() === card.clozeDeletion.trim().toLowerCase()) {
       // If the user is correct, increase the score by 1
       currentScore++;
       console.log("\nYou are correct!");

@@ -22,7 +22,8 @@ function ClozeCard(fullText, clozeDeletion) {
 }
 
 ClozeCard.prototype.displayCard = function displayCard() {
-  return this.partial.replace(/\.\.\./, "'" + this.cloze + "'");
+  //return this.partial.replace(/\.\.\./, "'" + this.cloze + "'");
+  return(this.fullText);
 };
 
 module.exports = ClozeCard;
