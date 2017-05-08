@@ -2,7 +2,7 @@
   "name": "flashcard-generator",
   "version": "1.0.0",
   "description": "Creates flashcards in either basic or cloze layout.",
-  "main": "BasicCard.js",
+  "main": "FlashcardQuizMe.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
