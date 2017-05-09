@@ -1,7 +1,7 @@
 function ClozeCard(fullText, clozeDeletion) {
 
   // Bypasses need for using the new keyword for creating an instance of the object.
-  if (!this instanceof ClozeCard) {
+  if (!(this instanceof ClozeCard)) {
   	return new ClozeCard(fullText, clozeDeletion);
   }
 

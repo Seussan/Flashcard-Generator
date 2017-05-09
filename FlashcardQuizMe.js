@@ -28,18 +28,22 @@ function initGame() {
     if (card.type === "Basic flashcards") {
       var cardType = "Basic";
       var cardData = BasicCardData;
-      // Creating a new card for each question using our BasicCard constructor
+      // Creating a new card for each question using the BasicCard constructor
       for (var i = 0; i < cardData.length; i++) {
-        currentCard = new BasicCard(cardData[i].front, cardData[i].back);
+        // Testing the call of the BasicCard constructor by leaving off the New keyword.
+        // currentCard = New BasicCard(cardData[i].front, cardData[i].back);
+        currentCard = BasicCard(cardData[i].front, cardData[i].back);
         cardArray.push(currentCard);
       }
     }
     else if (card.type === "Cloze-Deleted flashcards") {
       var cardType = "Cloze";
       var cardData = ClozeCardData;
-      // Creating a new card for each question using our ClozeCard constructor
+      // Creating a new card for each question using the ClozeCard constructor
       for (var i = 0; i < cardData.length; i++) {
-        currentCard = new ClozeCard(cardData[i].fullText, cardData[i].cloze);
+        // Testing the call of the ClozeCard constructor by leaving off the New keyword.
+        // currentCard = New ClozeCard(cardData[i].fullText, cardData[i].cloze);
+        currentCard = ClozeCard(cardData[i].fullText, cardData[i].cloze);
         cardArray.push(currentCard);
       }
     }

@@ -1,22 +1,22 @@
 [
   {
     "fullText": "George Washington was the first president of the United States.",
-    "cloze": "Washington"
+    "cloze": "United States"
   },
   {
     "fullText": "The 45th president of the United States is Donald Trump.",
-    "cloze": "45th"
+    "cloze": "Donald Trump"
   },
   {
     "fullText": "Nikola Tesla invented the modern day alternating current (AC) electricity supply system.",
-    "cloze": "alternating current"
+    "cloze": "Nikola"
   },
   {
     "fullText": "As of 2015, the population of the USA was 321.4 million.",
-    "cloze": "population"
+    "cloze": "million"
   },
   {
     "fullText": "As of 2017, the world population is at 7.5 billion.",
-    "cloze": "7.5"
+    "cloze": "billion"
   }
 ]
